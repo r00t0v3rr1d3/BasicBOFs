@@ -1,0 +1,38 @@
+{
+    "name": "Touch",
+    "version": "0.0.1",
+    "command_name": "touch",
+    "extension_author": "r00t0v3rr1d3",
+    "original_author": "r00t0v3rr1d3",
+    "repo_url": "https://github.com/r00t0v3rr1d3/BasicBOFs/tree/main/touch",
+    "help": "Touch matches or timestomps one file's time attributes to match anothers.",
+    "long_help": "",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "touch.x64.o"
+        },
+        {
+            "os": "windows",
+            "arch": "386",
+            "path": "touch.x86.o"
+        }
+    ],
+    "arguments": [
+        {
+            "name": "SOURCE",
+            "desc": "The file to reference and obtain times of. The previously there good file.",
+            "type": "string",
+            "optional": false
+        },
+        {
+            "name": "DESTINATION",
+            "desc": "The file to overwrite touch times for. Your bad file you want to blend.",
+            "type": "string",
+            "optional": false
+        }
+    ]
+}
